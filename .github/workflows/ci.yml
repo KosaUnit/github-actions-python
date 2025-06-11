@@ -27,3 +27,7 @@ jobs:
       - name: Run tests
         run: |
           pytest
+
+      - name: Deploy (simulated)
+        run: echo "✅ Code passed tests. Deploying to production..."
+
