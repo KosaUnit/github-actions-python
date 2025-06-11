@@ -28,6 +28,9 @@ jobs:
         run: |
           pytest
 
+      - name: Deploy cleaned dataset
+        run: python transform.py
+
       - name: Deploy (simulated)
         run: echo "✅ Code passed tests. Deploying to production..."
 
