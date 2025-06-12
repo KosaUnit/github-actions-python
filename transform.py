@@ -6,7 +6,7 @@ def load_weather_data(file_path: str) -> pd.DataFrame:
 
 
 def clean_weather_data(df: pd.DataFrame) -> pd.DataFrame:
-    df_cleaned = df.dropna()
+    df_cleaned = df.dropna().copy()
     df_cleaned['city'] = df_cleaned['city'].str.lower()
     return df_cleaned
 
