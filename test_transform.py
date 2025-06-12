@@ -30,4 +30,6 @@ miami,28,80
     }
     expected_df = pd.DataFrame(expected_data)
 
-    pd.testing.assert_frame_equal(result_df.reset_index(drop=True), expected_df)
+    pd.testing.assert_frame_equal(
+        result_df.reset_index(drop=True), expected_df
+        )
